@@ -1,0 +1,122 @@
+.centering {
+  padding: 0 3%;
+}
+
+.fv {
+  height: 100vh;
+  background: url("/images/bg-top--pc.jpg") no-repeat center / cover;
+  position: relative;
+
+  &-inner {
+    position: absolute;
+    width: 260px;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .logo {
+    text-align: center;
+    color: #fff;
+
+    .ttl {
+      display: block;
+      letter-spacing: 0.4em;
+      margin-bottom: 15px;
+    }
+
+  }
+
+  &-detail {
+    margin-top: 20px;
+    color: #fff;
+    min-width: 275px;
+    text-align: center;
+  }
+
+}
+
+.news-bar {
+  background-color: #B40000;
+  color: #fff;
+  padding: 10px 0;
+
+  dt {
+    font-size: 12rem;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+}
+
+.about {
+  margin: 30px 0;
+  text-align: center;
+
+  .txt {
+    p+ p {
+      margin-top: 20px;
+    }
+
+  }
+
+  &-inner {
+    border-top: 6px solid #D81717;
+    border-bottom: 6px solid #D81717;
+    padding: 40px 0px 60px;
+    background: url("/images/img-gems.png") no-repeat center 100.3%;
+    background-size: contain;
+  }
+
+}
+
+.wanted {
+  position: relative;
+  text-align: center;
+  padding: 40px 0 0;
+  background: url("/images/bg-about.jpg") repeat;
+
+  p+ p {
+    margin-top: 20px;
+  }
+
+  .btn {
+    margin-top: 20px;
+  }
+
+  .paper_img {
+    width: 60%;
+    max-width: 530px;
+    min-width: 200px;
+    margin: 25px auto 0;
+
+    img {
+      vertical-align: bottom;
+    }
+
+  }
+
+  .pencil {
+    position: absolute;
+    right: 10px;
+    bottom: -20px;
+    width: 30%;
+  }
+
+}
+
+.ippan {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.top-rubytxt {
+  line-height: 1;
+  display: block;
+  width: 40%;
+  max-width: 130px;
+  margin: 0 auto;
+}

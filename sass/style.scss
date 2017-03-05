@@ -1,0 +1,28 @@
+// ==========================================================================
+// Foundation
+// ==========================================================================
+@import "./foundation/_reset";
+@import "./foundation/_bace";
+// ==========================================================================
+// Object
+// ==========================================================================
+@import "./object/_btn";
+@import "./object/_common";
+
+@media screen and (min-width:850px) {
+  @import "./object/_btn_pc";
+  @import "./object/_common_pc";
+}
+
+// ==========================================================================
+// Layout
+// ==========================================================================
+@import "./layout/_header";
+@import "./layout/_footer";
+@import "./layout/_top";
+
+@media screen and (min-width:850px) {
+  @import "./layout/_header_pc";
+  @import "./layout/_footer_pc";
+  @import "./layout/_top_pc";
+}

@@ -1,0 +1,29 @@
+.btn {
+  text-align: center;
+
+  .basic {
+    min-width: 250px;
+    color: #fff;
+    background-color: #B51717;
+    display: inline-block;
+    padding: 10px 38px 10px 20px;
+    position: relative;
+    width: auto;
+
+    &:before {
+      content: "";
+      display: block;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 3px;
+      bottom: 0;
+      right: 10px;
+      margin: auto;
+      background: url("/images/btn-circle_arrow.png") no-repeat center;
+      background-size: contain;
+    }
+
+  }
+
+}
