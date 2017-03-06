@@ -16,6 +16,8 @@
     "gulp-watch": "^4.3.9"
   },
   "scripts": {
+    "start": "gulp browserSync",
+    "copy": "cp -r src/. .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
