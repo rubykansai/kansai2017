@@ -152,7 +152,8 @@ h6 {
   font-weight: normal; }
 
 a {
-  text-decoration: none;
+  color: #1096AD;
+  text-decoration: underline;
   transition: .3s ease-in-out; }
 
 a:hover {
@@ -171,6 +172,8 @@ img {
 
 .btn {
   text-align: center; }
+  .btn a {
+    text-decoration: none; }
   .btn .basic {
     width: 70%;
     color: #fff;
@@ -193,8 +196,12 @@ img {
       background: url("/images/btn-circle_arrow.png") no-repeat center;
       background-size: contain; }
 
+.btn {
+  margin-top: 30px; }
+
 .under_bar {
-  position: relative; }
+  position: relative;
+  margin-bottom: 40px; }
   .under_bar:before {
     content: "";
     display: block;
@@ -272,7 +279,7 @@ img {
         background-size: contain; }
   .under_bar {
     position: relative;
-    margin-bottom: 40px; }
+    margin-bottom: 60px; }
     .under_bar:before {
       content: "";
       display: block;
@@ -408,7 +415,7 @@ header.bgc {
   margin-top: 55px; }
 
 footer {
-  margin-top: 50px;
+  margin-top: 120px;
   padding: 5px 0;
   text-align: center;
   background: #282828; }
@@ -417,6 +424,11 @@ footer {
     color: #B0B0B0; }
 
 .centering {
+  padding: 0 3%; }
+
+.content_box {
+  margin: 40px 0;
+  text-align: center;
   padding: 0 3%; }
 
 .fv {
@@ -461,7 +473,7 @@ footer {
     border-top: 6px solid #D81717;
     border-bottom: 6px solid #D81717;
     padding: 40px 0px 60px;
-    background: url("/images/img-gems.png") no-repeat center 100.3%;
+    background: url("/images/img-gems.svg") no-repeat center 100.3%;
     background-size: contain; }
 
 .wanted {
@@ -646,7 +658,7 @@ footer {
   header.u-pc-b .header-g_navi > li:last-child > a {
     border-right: 1px solid #777; }
   .fv .logo {
-    margin-left: 14px;
+    margin-left: 3px;
     min-width: 270px;
     margin-bottom: 24px; }
     .fv .logo .logo_img {

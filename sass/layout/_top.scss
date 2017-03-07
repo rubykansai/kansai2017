@@ -2,6 +2,12 @@
   padding: 0 3%;
 }
 
+.content_box {
+  margin: 40px 0;
+  text-align: center;
+  padding: 0 3%;
+}
+
 .fv {
   height: 100vh;
   background: url("/images/bg-top--pc.jpg") no-repeat center / cover;
@@ -67,7 +73,7 @@
     border-top: 6px solid #D81717;
     border-bottom: 6px solid #D81717;
     padding: 40px 0px 60px;
-    background: url("/images/img-gems.png") no-repeat center 100.3%;
+    background: url("/images/img-gems.svg") no-repeat center 100.3%;
     background-size: contain;
   }
 
