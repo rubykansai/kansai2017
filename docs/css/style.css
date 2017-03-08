@@ -193,7 +193,7 @@ img {
       bottom: 0;
       right: 10px;
       margin: auto;
-      background: url("/images/btn-circle_arrow.png") no-repeat center;
+      background: url("../images/btn-circle_arrow.png") no-repeat center;
       background-size: contain; }
 
 .btn {
@@ -232,7 +232,7 @@ img {
     left: 0;
     right: 0;
     margin: auto;
-    background: url("/images/img-dot.png") no-repeat center;
+    background: url("../images/img-dot.png") no-repeat center;
     background-size: contain; }
 
 .ja_ttl {
@@ -275,7 +275,7 @@ img {
         bottom: 0;
         right: 10px;
         margin: auto;
-        background: url("/images/btn-circle_arrow.png") no-repeat center;
+        background: url("../images/btn-circle_arrow.png") no-repeat center;
         background-size: contain; }
   .under_bar {
     position: relative;
@@ -308,7 +308,7 @@ img {
       left: 0;
       right: 0;
       margin: auto;
-      background: url("/images/img-dot.png") no-repeat center;
+      background: url("../images/img-dot.png") no-repeat center;
       background-size: contain; }
   .ja_ttl {
     font-size: 35rem;
@@ -433,7 +433,7 @@ footer {
 
 .fv {
   height: 100vh;
-  background: url("/images/bg-top--pc.jpg") no-repeat center/cover;
+  background: url("../images/bg-top--pc.jpg") no-repeat center/cover;
   position: relative; }
   .fv-inner {
     position: absolute;
@@ -473,14 +473,14 @@ footer {
     border-top: 6px solid #D81717;
     border-bottom: 6px solid #D81717;
     padding: 40px 0px 60px;
-    background: url("/images/img-gems.svg") no-repeat center 100.3%;
+    background: url("../images/img-gems.svg") no-repeat center 100.3%;
     background-size: contain; }
 
 .wanted {
   position: relative;
   text-align: center;
   padding: 40px 0 0;
-  background: url("/images/bg-about.jpg") repeat; }
+  background: url("../images/bg-about.jpg") repeat; }
   .wanted p + p {
     margin-top: 20px; }
   .wanted .btn {
@@ -690,7 +690,7 @@ footer {
       border-top: 6px solid #D81717;
       border-bottom: 6px solid #D81717;
       padding: 50px 0px 80px;
-      background: url("/images/img-gems.svg") no-repeat center 100.3%;
+      background: url("../images/img-gems.svg") no-repeat center 100.3%;
       background-size: contain; }
   .wanted {
     text-align: left; }
