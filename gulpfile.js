@@ -1,54 +1,50 @@
-var gulp     = require('gulp'),
-    prefixer = require('gulp-autoprefixer'),
-    gutil    = require('gulp-util'),
-    sass = require("gulp-sass"),
-    browserSync = require("browser-sync"),
-    plumber = require("gulp-plumber"),
-    notify  = require('gulp-notify');
-    gulpWatch = require('gulp-watch');
+const gulp = require('gulp')
+const gutil = require('gulp-util')
+const watch = require('gulp-watch')
+const notify = require('gulp-notify')
+const plumber = require('gulp-plumber')
+const sass = require('gulp-sass')
+const prefixer = require('gulp-autoprefixer')
+const cssmin = require('gulp-cssmin')
+const rename = require('gulp-rename')
+const browserSync = require('browser-sync')
 
-// browserSyncのリロード
-var reload  = browserSync.reload;
+gulp.task('browser-sync', () => {
+  browserSync.init({
+    server: {
+      baseDir: './docs'
+    }
+  })
+})
 
-// browserSync ルートはdest
-gulp.task("browserSync", function () {
-    browserSync.init({
-        server: {
-            baseDir: "./src" // ルートとなるディレクトリを指定
-        }
-    });
-});
+gulp.task('watch', () => {
+  watch('docs/**/*', (event) => {
+    browserSync.reload()
+  })
 
+  watch('src/sass/**/*.scss', (event) => {
+    gulp.start(['sass'])
+  })
+})
 
-// sass
-gulp.task("sass", function() {
-    gulp.src("sass/**/*.scss")
-        // エラーの場合のデスクトップポップアップ表示
-        .pipe(plumber({
-          errorHandler: notify.onError("Error: <%= error.message %>") //<-
-        }))
-        .pipe(sass())
-        .pipe(prefixer('last 2 version'))
-        .pipe(gulp.dest('./src/css'))
-});
+gulp.task('sass', () => {
+  gulp.src('src/sass/**/*.scss')
+    .pipe(plumber({
+      errorHandler: notify.onError('Error: <%= error.message %>')
+    }))
+    .pipe(sass())
+    .pipe(prefixer('last 2 version'))
+    .pipe(gulp.dest('docs/css'))
+})
 
-gulp.task("cssmin", function() {
-    gulp.src("./src/**/*.css")
-        // エラーの場合のデスクトップポップアップ表示
-        .pipe(plumber({
-          errorHandler: notify.onError("Error: <%= error.message %>") //<-
-        }))
-        .pipe(sass())
-        .pipe(prefixer('last 2 version'))
-        .pipe(gulp.dest('./src/css'))
-});
+gulp.task('cssmin', () => {
+  gulp.src('docs/css/style.css')
+    .pipe(plumber({
+      errorHandler: notify.onError('Error: <%= error.message %>')
+    }))
+    .pipe(cssmin())
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('docs/css'))
+})
 
-
-gulp.task("watch",["browserSync"] ,function(){
-    gulp.watch('sass/**/*.scss', ['sass']),
-    gulp.watch('src/**/*', reload);
-});
-
-gulp.task("default",["sass"]);
-
-
+gulp.task('default', ['browser-sync', 'watch'])
