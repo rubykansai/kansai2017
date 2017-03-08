@@ -1,43 +1,18 @@
-# 関西Ruby会議2017
+# Kansai RubyKaigi 2017
 
-## 開催概要
+## Installation
 
-* 名称: 関西Ruby会議2017
-* テーマ: Ruby Community and Ruby Business
-* 開催日: 2017年5月27日(土)
-* 会場: 大阪産業創造館 4F イベントホール
-* 定員: 200名程度
-* 参加費: なし
-* 配信: 未定
+```
+$ git clone https://github.com/rubykansai/kansai2017.git
+$ cd kansai2017/
+$ yarnpkg install
+$ yarnpkg start
+```
 
-## 発表募集
+## Usage
 
-2016年は京都でRubyKaigiが開催されて大盛況でした。  
-そして、2017年は地域Ruby会議を大阪で開催します。  
+* minify css:
 
-今回からナンバリングを年にしたので **関西Ruby会議2017** になりました。  
-講演には *須藤 功平* さん、 *増井 雄一郎* さんをゲストに招待します。  
-
-テーマは **Ruby Community and Ruby Business** です。  
-
-関西は`20`近くのRubyのコミュニティが活動をしています。  
-そこには素敵な人が集まり楽しい時間が生まれています。  
-
-コミュニティでビジネスの困りごとのヒントになったり、  
-新しいビジネスにつながったり、コミュニティで相互な関係が築かれています。
-
-もっとコミュニティを楽しく、ビジネスを楽しくするための  
-プログラミングやメソッドなどを共有してください。
-
-
-### 応募要項
-
-* 発表者の名前
-* 発表の題目
-* 発表の概要
-* 内容の解説
-* 技術的面白さ
-* 連絡先(e-mail,Twitter IDなど)
-* 発表時間は30分です。
-
-[申し込みサイト](https://rubykansai.doorkeeper.jp/events/57723)
+```
+$ yarnpkg build
+```
