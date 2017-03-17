@@ -80,36 +80,39 @@
 }
 
 .wanted {
-  position: relative;
-  text-align: center;
-  padding: 40px 0 0;
-  background: url("/images/bg-about.jpg") repeat;
+  margin-top: 80px;
+}
 
-  p+ p {
-    margin-top: 20px;
-  }
+.guest {
+  margin-top: 110px;
 
-  .btn {
-    margin-top: 20px;
-  }
+  .under_bar {
+    margin-bottom: 50px;
 
-  .paper_img {
-    width: 60%;
-    max-width: 530px;
-    min-width: 200px;
-    margin: 25px auto 0;
-
-    img {
-      vertical-align: bottom;
+    &:before {
+      bottom: -23px;
     }
 
   }
 
-  .pencil {
-    position: absolute;
-    right: 10px;
-    bottom: -20px;
-    width: 30%;
+  .guest_box {
+    margin-top: 80px;
+
+    figcaption {
+      margin-top: 15px;
+    }
+
+    .guest_box-name {
+      display: block;
+      font-weight: bold;
+      font-size: 22rem;
+      letter-spacing: 0.1em;
+    }
+
+    .guest_box-company {
+      display: block;
+    }
+
   }
 
 }

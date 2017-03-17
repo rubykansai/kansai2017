@@ -72,47 +72,51 @@
 
 }
 
-.wanted {
-  text-align: left;
+.guest {
+  margin-top: 110px;
 
-  .centering {
-    position: relative;
+  &-inner {
+    margin-top: 80px;
   }
 
-  .txt {
-    line-height: 1.7;
+  .centering {
+    padding: 0;
   }
 
   .under_bar {
+    margin-bottom: 50px;
+
     &:before {
-      content: "";
-      left: 5px;
-      right: inherit;
+      bottom: -23px;
     }
 
   }
 
-  .btn {
-    margin-top: 30px;
-    text-align: left;
-  }
-
-  .detail {
-    float: right;
-    width: 400px;
-    margin-top: 17px;
-  }
-
-  .paper_img {
+  .guest_box {
     float: left;
-    width: 400px;
-  }
+    width: 45%;
+    margin-left: 10%;
+    margin-top: 0;
 
-  .pencil {
-    position: absolute;
-    right: 50px;
-    bottom: -60px;
-    width: 260px;
+    &:first-child {
+      margin-left: 0;
+    }
+
+    figcaption {
+      margin-top: 15px;
+    }
+
+    .guest_box-name {
+      display: block;
+      font-weight: bold;
+      font-size: 22rem;
+      letter-spacing: 0.1em;
+    }
+
+    .guest_box-company {
+      display: block;
+    }
+
   }
 
 }

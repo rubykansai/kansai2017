@@ -50,14 +50,23 @@
 .ja_ttl {
   font-size: 30rem;
   font-weight: bold;
-  margin-bottom: 30px;
   letter-spacing: 0.1em;
+  margin-bottom: 60px;
 }
 
 .clearfix:after {
   content: " ";
   display: block;
   clear: both;
+}
+
+.accent_txt {
+  font-weight: normal;
+  color: #32A196;
+}
+
+.attention_color {
+  color: #D71717;
 }
 
 @media screen and (min-width:850px) {
