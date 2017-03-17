@@ -41,3 +41,9 @@ body {
 img {
   width: 100%;
 }
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+}

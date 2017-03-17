@@ -66,53 +66,67 @@
     border-top: 6px solid #D81717;
     border-bottom: 6px solid #D81717;
     padding: 50px 0px 80px;
-    background: url("/images/img-gems.svg") no-repeat center 100.3%;
+    background: url("../images/img-gems.svg") no-repeat center 100.3%;
     background-size: contain;
   }
 
 }
 
-.wanted {
-  text-align: left;
+.guest {
+  margin-top: 110px;
 
-  .centering {
-    position: relative;
+  &-inner {
+    margin-top: 80px;
   }
 
-  .txt {
-    line-height: 1.7;
+  .centering {
+    padding: 0;
   }
 
   .under_bar {
+    margin-bottom: 50px;
+
     &:before {
-      content: "";
-      left: 5px;
-      right: inherit;
+      bottom: -23px;
     }
 
   }
 
-  .btn {
-    margin-top: 30px;
-    text-align: left;
+  .guest_link {
+    margin-top: 15px;
+    font-size: 14rem;
   }
 
-  .detail {
-    float: right;
-    width: 400px;
-    margin-top: 17px;
-  }
-
-  .paper_img {
+  .guest_box {
     float: left;
-    width: 400px;
-  }
+    width: 45%;
+    margin-left: 10%;
+    margin-top: 0;
+    line-height: 1.8;
 
-  .pencil {
-    position: absolute;
-    right: 50px;
-    bottom: -60px;
-    width: 260px;
+    &:first-child {
+      margin-left: 0;
+    }
+
+    a {
+      color: #B02020;
+    }
+
+    figcaption {
+      margin-top: 15px;
+    }
+
+    .guest_box-name {
+      display: block;
+      font-weight: bold;
+      font-size: 22rem;
+      letter-spacing: 0.1em;
+    }
+
+    .guest_box-company {
+      display: block;
+    }
+
   }
 
 }
@@ -122,6 +136,61 @@
 
   .txt {
     margin-top: 50px;
+  }
+
+}
+
+.staff {
+  &.content_box {
+    padding-bottom: 90px;
+  }
+
+  .centering {
+    width: 680px;
+  }
+
+  .staff_list {
+    width: 93%;
+    margin: 0 auto;
+
+    li {
+      width: 12%;
+      display: inline-block;
+      margin-left: 4%;
+      margin-top: 18px;
+      vertical-align: top;
+
+      .detail {
+        margin-top: 10px;
+        display: block;
+        font-size: 10rem;
+        text-decoration: none;
+
+        .job {
+          font-size: 9rem;
+          line-height: 1;
+          color: #8A8A8A;
+        }
+
+        .name {
+          word-break: break-all;
+          line-height: 1.4;
+          color: #3DA69C;
+        }
+
+      }
+
+    }
+
+  }
+
+  .staff_block {
+    margin-top: 30px;
+    padding: 40px 0 40px;
+  }
+
+  .staff_ttl {
+    width: 30%;
   }
 
 }

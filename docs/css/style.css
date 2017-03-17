@@ -170,6 +170,11 @@ body {
 img {
   width: 100%; }
 
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both; }
+
 .btn {
   text-align: center; }
   .btn a {
@@ -193,7 +198,7 @@ img {
       bottom: 0;
       right: 10px;
       margin: auto;
-      background: url("../images/btn-circle_arrow.png") no-repeat center;
+      background: url("/images/btn-circle_arrow.png") no-repeat center;
       background-size: contain; }
 
 .btn {
@@ -219,6 +224,13 @@ img {
   font-weight: bold;
   font-family: Avenir Next;
   margin-bottom: 30px; }
+  .en_ttl--italic {
+    font-style: italic;
+    font-weight: bold;
+    top: -27px;
+    position: relative;
+    font-size: 28rem;
+    letter-spacing: 0.1em; }
 
 .dot {
   position: relative; }
@@ -232,19 +244,26 @@ img {
     left: 0;
     right: 0;
     margin: auto;
-    background: url("../images/img-dot.png") no-repeat center;
+    background: url("/images/img-dot.png") no-repeat center;
     background-size: contain; }
 
 .ja_ttl {
   font-size: 30rem;
   font-weight: bold;
-  margin-bottom: 30px;
-  letter-spacing: 0.1em; }
+  letter-spacing: 0.1em;
+  margin-bottom: 60px; }
 
 .clearfix:after {
   content: " ";
   display: block;
   clear: both; }
+
+.accent_txt {
+  font-weight: normal;
+  color: #32A196; }
+
+.attention_color {
+  color: #D71717; }
 
 @media screen and (min-width: 850px) {
   .u-sp-b {
@@ -275,11 +294,11 @@ img {
         bottom: 0;
         right: 10px;
         margin: auto;
-        background: url("../images/btn-circle_arrow.png") no-repeat center;
+        background: url("/images/btn-circle_arrow.png") no-repeat center;
         background-size: contain; }
   .under_bar {
     position: relative;
-    margin-bottom: 60px; }
+    margin-bottom: 80px; }
     .under_bar:before {
       content: "";
       display: block;
@@ -296,6 +315,10 @@ img {
     font-weight: bold;
     font-family: Avenir Next;
     margin-bottom: 30px; }
+    .en_ttl--italic {
+      top: -37px;
+      position: relative;
+      font-size: 40rem; }
   .dot {
     position: relative; }
     .dot:before {
@@ -308,10 +331,10 @@ img {
       left: 0;
       right: 0;
       margin: auto;
-      background: url("../images/img-dot.png") no-repeat center;
+      background: url("/images/img-dot.png") no-repeat center;
       background-size: contain; }
   .ja_ttl {
-    font-size: 35rem;
+    font-size: 34rem;
     font-weight: bold;
     letter-spacing: 0.15em; }
   .clearfix:after {
@@ -477,26 +500,43 @@ footer {
     background-size: contain; }
 
 .wanted {
-  position: relative;
-  text-align: center;
-  padding: 40px 0 0;
-  background: url("../images/bg-about.jpg") repeat; }
-  .wanted p + p {
-    margin-top: 20px; }
-  .wanted .btn {
-    margin-top: 20px; }
-  .wanted .paper_img {
-    width: 60%;
-    max-width: 530px;
-    min-width: 200px;
-    margin: 25px auto 0; }
-    .wanted .paper_img img {
-      vertical-align: bottom; }
-  .wanted .pencil {
-    position: absolute;
-    right: 10px;
-    bottom: -20px;
-    width: 30%; }
+  margin-top: 80px; }
+
+.guest {
+  margin-top: 110px; }
+  .guest .under_bar {
+    margin-bottom: 50px; }
+    .guest .under_bar:before {
+      bottom: -23px; }
+  .guest .guest_link {
+    margin-top: 10px; }
+    .guest .guest_link li {
+      display: inline-block;
+      position: relative;
+      margin-left: 4px;
+      padding-left: 11px; }
+      .guest .guest_link li:before {
+        position: absolute;
+        display: block;
+        content: "/";
+        left: -2px; }
+      .guest .guest_link li:first-child {
+        margin-left: 0;
+        padding-left: 0; }
+        .guest .guest_link li:first-child:before {
+          display: none;
+          content: ""; }
+  .guest .guest_box {
+    margin-top: 80px; }
+    .guest .guest_box figcaption {
+      margin-top: 15px; }
+    .guest .guest_box .guest_box-name {
+      display: block;
+      font-weight: bold;
+      font-size: 22rem;
+      letter-spacing: 0.1em; }
+    .guest .guest_box .guest_box-company {
+      display: block; }
 
 .ippan {
   padding: 60px 0;
@@ -508,6 +548,70 @@ footer {
   width: 40%;
   max-width: 130px;
   margin: 0 auto; }
+
+.staff {
+  margin-top: 120px;
+  background-color: #eee; }
+  .staff.content_box {
+    padding-bottom: 60px; }
+  .staff .staff_list {
+    text-align: center;
+    position: relative;
+    z-index: 10; }
+    .staff .staff_list li {
+      width: 17%;
+      display: inline-block;
+      margin-left: 2%;
+      margin-top: 14px;
+      vertical-align: top; }
+      .staff .staff_list li span {
+        display: block; }
+      .staff .staff_list li img {
+        vertical-align: top; }
+      .staff .staff_list li .detail {
+        margin-top: 10px;
+        display: block;
+        font-size: 10rem;
+        text-decoration: none; }
+        .staff .staff_list li .detail .job {
+          font-size: 9rem;
+          line-height: 1;
+          color: #8A8A8A; }
+        .staff .staff_list li .detail .name {
+          word-break: break-all;
+          line-height: 1.4;
+          color: #3DA69C; }
+  .staff .staff_block {
+    margin-top: 20px;
+    padding: 40px 0 30px;
+    border-top: 1px solid #929292;
+    border-bottom: 1px solid #929292;
+    position: relative; }
+    .staff .staff_block:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 3px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-top: 1px solid #929292;
+      border-bottom: 1px solid #929292;
+      z-index: 1; }
+  .staff .staff_ttl {
+    position: absolute;
+    top: -17px;
+    z-index: 5;
+    display: block;
+    font-weight: bold;
+    font-size: 18rem;
+    padding: 5px 15px;
+    background: #fff;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 40%;
+    min-width: 180px; }
 
 @media screen and (min-width: 850px) {
   .bgc {
@@ -692,32 +796,70 @@ footer {
       padding: 50px 0px 80px;
       background: url("../images/img-gems.svg") no-repeat center 100.3%;
       background-size: contain; }
-  .wanted {
-    text-align: left; }
-    .wanted .centering {
-      position: relative; }
-    .wanted .txt {
-      line-height: 1.7; }
-    .wanted .under_bar:before {
-      content: "";
-      left: 5px;
-      right: inherit; }
-    .wanted .btn {
-      margin-top: 30px;
-      text-align: left; }
-    .wanted .detail {
-      float: right;
-      width: 400px;
-      margin-top: 17px; }
-    .wanted .paper_img {
+  .guest {
+    margin-top: 110px; }
+    .guest-inner {
+      margin-top: 80px; }
+    .guest .centering {
+      padding: 0; }
+    .guest .under_bar {
+      margin-bottom: 50px; }
+      .guest .under_bar:before {
+        bottom: -23px; }
+    .guest .guest_link {
+      margin-top: 15px;
+      font-size: 14rem; }
+    .guest .guest_box {
       float: left;
-      width: 400px; }
-    .wanted .pencil {
-      position: absolute;
-      right: 50px;
-      bottom: -60px;
-      width: 260px; }
+      width: 45%;
+      margin-left: 10%;
+      margin-top: 0;
+      line-height: 1.8; }
+      .guest .guest_box:first-child {
+        margin-left: 0; }
+      .guest .guest_box a {
+        color: #B02020; }
+      .guest .guest_box figcaption {
+        margin-top: 15px; }
+      .guest .guest_box .guest_box-name {
+        display: block;
+        font-weight: bold;
+        font-size: 22rem;
+        letter-spacing: 0.1em; }
+      .guest .guest_box .guest_box-company {
+        display: block; }
   .ippan {
     margin-top: 60px; }
     .ippan .txt {
-      margin-top: 50px; } }
+      margin-top: 50px; }
+  .staff.content_box {
+    padding-bottom: 90px; }
+  .staff .centering {
+    width: 680px; }
+  .staff .staff_list {
+    width: 93%;
+    margin: 0 auto; }
+    .staff .staff_list li {
+      width: 12%;
+      display: inline-block;
+      margin-left: 4%;
+      margin-top: 18px;
+      vertical-align: top; }
+      .staff .staff_list li .detail {
+        margin-top: 10px;
+        display: block;
+        font-size: 10rem;
+        text-decoration: none; }
+        .staff .staff_list li .detail .job {
+          font-size: 9rem;
+          line-height: 1;
+          color: #8A8A8A; }
+        .staff .staff_list li .detail .name {
+          word-break: break-all;
+          line-height: 1.4;
+          color: #3DA69C; }
+  .staff .staff_block {
+    margin-top: 30px;
+    padding: 40px 0 40px; }
+  .staff .staff_ttl {
+    width: 30%; } }

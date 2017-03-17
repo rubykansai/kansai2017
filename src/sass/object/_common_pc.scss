@@ -1,6 +1,6 @@
 .under_bar {
   position: relative;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 
   &:before {
     content: "";
@@ -22,6 +22,13 @@
   font-weight: bold;
   font-family: Avenir Next;
   margin-bottom: 30px;
+
+  &--italic {
+    top: -37px;
+    position: relative;
+    font-size: 40rem;
+  }
+
 }
 
 .dot {
@@ -44,7 +51,7 @@
 }
 
 .ja_ttl {
-  font-size: 35rem;
+  font-size: 34rem;
   font-weight: bold;
   letter-spacing: 0.15em;
 }
