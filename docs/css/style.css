@@ -456,7 +456,7 @@ footer {
 
 .fv {
   height: 100vh;
-  background: url("/images/bg-top--pc.jpg") no-repeat center/cover;
+  background: url("../images/bg-top--pc.jpg") no-repeat center/cover;
   position: relative; }
   .fv-inner {
     position: absolute;
@@ -496,7 +496,7 @@ footer {
     border-top: 6px solid #D81717;
     border-bottom: 6px solid #D81717;
     padding: 40px 0px 60px;
-    background: url("/images/img-gems.svg") no-repeat center 100.3%;
+    background: url("../images/img-gems.svg") no-repeat center 100.3%;
     background-size: contain; }
 
 .wanted {
@@ -794,7 +794,7 @@ footer {
       border-top: 6px solid #D81717;
       border-bottom: 6px solid #D81717;
       padding: 50px 0px 80px;
-      background: url("/images/img-gems.svg") no-repeat center 100.3%;
+      background: url("../images/img-gems.svg") no-repeat center 100.3%;
       background-size: contain; }
   .guest {
     margin-top: 110px; }
