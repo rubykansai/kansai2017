@@ -224,6 +224,13 @@ img {
   font-weight: bold;
   font-family: Avenir Next;
   margin-bottom: 30px; }
+  .en_ttl--italic {
+    font-style: italic;
+    font-weight: bold;
+    top: -27px;
+    position: relative;
+    font-size: 28rem;
+    letter-spacing: 0.1em; }
 
 .dot {
   position: relative; }
@@ -308,6 +315,10 @@ img {
     font-weight: bold;
     font-family: Avenir Next;
     margin-bottom: 30px; }
+    .en_ttl--italic {
+      top: -37px;
+      position: relative;
+      font-size: 40rem; }
   .dot {
     position: relative; }
     .dot:before {
@@ -538,6 +549,70 @@ footer {
   max-width: 130px;
   margin: 0 auto; }
 
+.staff {
+  margin-top: 120px;
+  background-color: #eee; }
+  .staff.content_box {
+    padding-bottom: 60px; }
+  .staff .staff_list {
+    text-align: center;
+    position: relative;
+    z-index: 10; }
+    .staff .staff_list li {
+      width: 17%;
+      display: inline-block;
+      margin-left: 2%;
+      margin-top: 14px;
+      vertical-align: top; }
+      .staff .staff_list li span {
+        display: block; }
+      .staff .staff_list li img {
+        vertical-align: top; }
+      .staff .staff_list li .detail {
+        margin-top: 10px;
+        display: block;
+        font-size: 10rem;
+        text-decoration: none; }
+        .staff .staff_list li .detail .job {
+          font-size: 9rem;
+          line-height: 1;
+          color: #8A8A8A; }
+        .staff .staff_list li .detail .name {
+          word-break: break-all;
+          line-height: 1.4;
+          color: #3DA69C; }
+  .staff .staff_block {
+    margin-top: 20px;
+    padding: 40px 0 30px;
+    border-top: 1px solid #929292;
+    border-bottom: 1px solid #929292;
+    position: relative; }
+    .staff .staff_block:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 3px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-top: 1px solid #929292;
+      border-bottom: 1px solid #929292;
+      z-index: 1; }
+  .staff .staff_ttl {
+    position: absolute;
+    top: -17px;
+    z-index: 5;
+    display: block;
+    font-weight: bold;
+    font-size: 18rem;
+    padding: 5px 15px;
+    background: #fff;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 40%;
+    min-width: 180px; }
+
 @media screen and (min-width: 850px) {
   .bgc {
     background-color: rgba(0, 0, 0, 0.6); }
@@ -738,9 +813,12 @@ footer {
       float: left;
       width: 45%;
       margin-left: 10%;
-      margin-top: 0; }
+      margin-top: 0;
+      line-height: 1.8; }
       .guest .guest_box:first-child {
         margin-left: 0; }
+      .guest .guest_box a {
+        color: #B02020; }
       .guest .guest_box figcaption {
         margin-top: 15px; }
       .guest .guest_box .guest_box-name {
@@ -753,4 +831,35 @@ footer {
   .ippan {
     margin-top: 60px; }
     .ippan .txt {
-      margin-top: 50px; } }
+      margin-top: 50px; }
+  .staff.content_box {
+    padding-bottom: 90px; }
+  .staff .centering {
+    width: 680px; }
+  .staff .staff_list {
+    width: 93%;
+    margin: 0 auto; }
+    .staff .staff_list li {
+      width: 12%;
+      display: inline-block;
+      margin-left: 4%;
+      margin-top: 18px;
+      vertical-align: top; }
+      .staff .staff_list li .detail {
+        margin-top: 10px;
+        display: block;
+        font-size: 10rem;
+        text-decoration: none; }
+        .staff .staff_list li .detail .job {
+          font-size: 9rem;
+          line-height: 1;
+          color: #8A8A8A; }
+        .staff .staff_list li .detail .name {
+          word-break: break-all;
+          line-height: 1.4;
+          color: #3DA69C; }
+  .staff .staff_block {
+    margin-top: 30px;
+    padding: 40px 0 40px; }
+  .staff .staff_ttl {
+    width: 30%; } }

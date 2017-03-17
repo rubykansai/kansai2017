@@ -102,9 +102,14 @@
     width: 45%;
     margin-left: 10%;
     margin-top: 0;
+    line-height: 1.8;
 
     &:first-child {
       margin-left: 0;
+    }
+
+    a {
+      color: #B02020;
     }
 
     figcaption {
@@ -131,6 +136,61 @@
 
   .txt {
     margin-top: 50px;
+  }
+
+}
+
+.staff {
+  &.content_box {
+    padding-bottom: 90px;
+  }
+
+  .centering {
+    width: 680px;
+  }
+
+  .staff_list {
+    width: 93%;
+    margin: 0 auto;
+
+    li {
+      width: 12%;
+      display: inline-block;
+      margin-left: 4%;
+      margin-top: 18px;
+      vertical-align: top;
+
+      .detail {
+        margin-top: 10px;
+        display: block;
+        font-size: 10rem;
+        text-decoration: none;
+
+        .job {
+          font-size: 9rem;
+          line-height: 1;
+          color: #8A8A8A;
+        }
+
+        .name {
+          word-break: break-all;
+          line-height: 1.4;
+          color: #3DA69C;
+        }
+
+      }
+
+    }
+
+  }
+
+  .staff_block {
+    margin-top: 30px;
+    padding: 40px 0 40px;
+  }
+
+  .staff_ttl {
+    width: 30%;
   }
 
 }

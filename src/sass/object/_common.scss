@@ -26,6 +26,16 @@
   font-weight: bold;
   font-family: Avenir Next;
   margin-bottom: 30px;
+
+  &--italic {
+    font-style: italic;
+    font-weight: bold;
+    top: -27px;
+    position: relative;
+    font-size: 28rem;
+    letter-spacing: 0.1em;
+  }
+
 }
 
 .dot {
