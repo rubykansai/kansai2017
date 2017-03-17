@@ -497,6 +497,24 @@ footer {
     margin-bottom: 50px; }
     .guest .under_bar:before {
       bottom: -23px; }
+  .guest .guest_link {
+    margin-top: 10px; }
+    .guest .guest_link li {
+      display: inline-block;
+      position: relative;
+      margin-left: 4px;
+      padding-left: 11px; }
+      .guest .guest_link li:before {
+        position: absolute;
+        display: block;
+        content: "/";
+        left: -2px; }
+      .guest .guest_link li:first-child {
+        margin-left: 0;
+        padding-left: 0; }
+        .guest .guest_link li:first-child:before {
+          display: none;
+          content: ""; }
   .guest .guest_box {
     margin-top: 80px; }
     .guest .guest_box figcaption {
@@ -713,6 +731,9 @@ footer {
       margin-bottom: 50px; }
       .guest .under_bar:before {
         bottom: -23px; }
+    .guest .guest_link {
+      margin-top: 15px;
+      font-size: 14rem; }
     .guest .guest_box {
       float: left;
       width: 45%;

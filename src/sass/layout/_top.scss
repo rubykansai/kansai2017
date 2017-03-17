@@ -95,6 +95,37 @@
 
   }
 
+  .guest_link {
+    margin-top: 10px;
+
+    li {
+      display: inline-block;
+      position: relative;
+      margin-left: 4px;
+      padding-left: 11px;
+
+      &:before {
+        position: absolute;
+        display: block;
+        content: "/";
+        left: -2px;
+      }
+
+      &:first-child {
+        margin-left: 0;
+        padding-left: 0;
+
+        &:before {
+          display: none;
+          content: "";
+        }
+
+      }
+
+    }
+
+  }
+
   .guest_box {
     margin-top: 80px;
 
@@ -128,4 +159,7 @@
   width: 40%;
   max-width: 130px;
   margin: 0 auto;
+}
+
+.staff {
 }
