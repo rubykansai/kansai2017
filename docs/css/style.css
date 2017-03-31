@@ -282,6 +282,8 @@ img {
     background: url("../images/bg-stripe_gold.png") repeat; }
   .strip_bg.silver:before {
     background: url("../images/bg-stripe_silver.png") repeat; }
+  .strip_bg.bronze:before {
+    background: url("../images/bg-stripe_bronze.png") repeat; }
 
 @media screen and (min-width: 850px) {
   .u-sp-b {
@@ -875,6 +877,8 @@ footer {
     padding: 70px 0; }
     .sponsor .sponsor_block {
       padding: 0 0 60px; }
+    .sponsor .en_ttl--italic {
+      font-size: 35rem; }
     .sponsor .sponsor_box {
       width: 45%;
       float: left;

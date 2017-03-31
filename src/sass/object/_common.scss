@@ -109,6 +109,13 @@
 
   }
 
+  &.bronze {
+    &:before {
+      background: url("../images/bg-stripe_bronze.png") repeat;
+    }
+
+  }
+
 }
 
 @media screen and (min-width:850px) {
