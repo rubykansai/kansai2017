@@ -131,6 +131,24 @@
 
 }
 
+.sponsor {
+  .sponsor_box {
+    width: 47%;
+    float: left;
+
+    figcaption {
+      margin-top: 15px;
+      line-height: 1.8;
+    }
+
+    & + .sponsor_box {
+      margin-top: 40px;
+    }
+
+  }
+
+}
+
 .ippan {
   margin-top: 60px;
 

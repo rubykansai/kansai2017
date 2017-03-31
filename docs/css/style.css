@@ -274,7 +274,7 @@ img {
     display: block;
     position: absolute;
     top: 17px;
-    left: -18%;
+    left: -15%;
     z-index: -1;
     width: 130%;
     height: 25px; }
@@ -570,7 +570,8 @@ footer {
 .sponsor {
   padding: 30px 3%;
   margin-top: 120px;
-  background: url("../images/bg-sponsor.jpg"); }
+  background-image: url("../images/bg-sponsor.jpg");
+  background-size: cover; }
   .sponsor .centering {
     padding: 30px 3%; }
   .sponsor .sponsor_block {
@@ -870,6 +871,14 @@ footer {
         letter-spacing: 0.1em; }
       .guest .guest_box .guest_box-company {
         display: block; }
+  .sponsor .sponsor_box {
+    width: 47%;
+    float: left; }
+    .sponsor .sponsor_box figcaption {
+      margin-top: 15px;
+      line-height: 1.8; }
+    .sponsor .sponsor_box + .sponsor_box {
+      margin-top: 40px; }
   .ippan {
     margin-top: 60px; }
     .ippan .txt {

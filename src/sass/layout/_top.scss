@@ -164,7 +164,8 @@
 .sponsor {
   padding: 30px 3%;
   margin-top: 120px;
-  background: url("../images/bg-sponsor.jpg");
+  background-image: url("../images/bg-sponsor.jpg");
+  background-size: cover;
 
   .centering {
     padding: 30px 3%;
