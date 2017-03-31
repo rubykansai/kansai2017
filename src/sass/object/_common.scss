@@ -51,7 +51,7 @@
     left: 0;
     right: 0;
     margin: auto;
-    background: url("/images/img-dot.png")no-repeat center;
+    background: url("../images/img-dot.png")no-repeat center;
     background-size: contain;
   }
 
@@ -77,6 +77,38 @@
 
 .attention_color {
   color: #D71717;
+}
+
+.strip_bg {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 27px;
+    left: -15%;
+    z-index: -1;
+    width: 130%;
+    height: 25px;
+  }
+
+  &.gold {
+    &:before {
+      background: url("../images/bg-stripe_gold.png") repeat;
+    }
+
+  }
+
+  &.silver {
+    &:before {
+      background: url("../images/bg-stripe_silver.png") repeat;
+    }
+
+  }
+
 }
 
 @media screen and (min-width:850px) {

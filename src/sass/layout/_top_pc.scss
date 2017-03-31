@@ -131,6 +131,45 @@
 
 }
 
+.sponsor {
+  padding: 70px 0;
+
+  .sponsor_block {
+    padding: 0 0 60px;
+  }
+
+  .sponsor_box {
+    width: 45%;
+    float: left;
+    margin-left: 3%;
+    max-width: inherit;
+
+    figcaption {
+      margin-top: 15px;
+      line-height: 1.8;
+    }
+
+    & + .sponsor_box {
+      margin-top: 0;
+    }
+
+    &.floatnone {
+      float: none;
+      margin: 0 auto;
+    }
+
+  }
+
+  .pcwidth_h {
+    width: 200px;
+  }
+
+  .pcwidth_w {
+    width: 300px;
+  }
+
+}
+
 .ippan {
   margin-top: 60px;
 
