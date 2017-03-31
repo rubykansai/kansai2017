@@ -161,6 +161,46 @@
   margin: 0 auto;
 }
 
+.sponsor {
+  padding: 30px 3%;
+  margin-top: 120px;
+  background: url("../images/bg-sponsor.jpg");
+
+  .centering {
+    padding: 30px 3%;
+  }
+
+  .sponsor_block {
+    border-radius: 10px;
+    position: relative;
+    padding: 0 0 50px;
+    background-color: #fff;
+
+    & + .sponsor_block {
+      margin-top: 60px;
+    }
+
+  }
+
+  .sponsor_box {
+    width: 80%;
+    max-width: 300px;
+    margin: 0 auto;
+    font-size: 12rem;
+
+    figcaption {
+      margin-top: 15px;
+      line-height: 1.8;
+    }
+
+    & + .sponsor_box {
+      margin-top: 40px;
+    }
+
+  }
+
+}
+
 .staff {
   margin-top: 120px;
   background-color: #eee;

@@ -79,6 +79,38 @@
   color: #D71717;
 }
 
+.strip_bg {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 17px;
+    left: -18%;
+    z-index: -1;
+    width: 130%;
+    height: 25px;
+  }
+
+  &.gold {
+    &:before {
+      background: url("../images/bg-stripe_gold.png") repeat;
+    }
+
+  }
+
+  &.silver {
+    &:before {
+      background: url("../images/bg-stripe_silver.png") repeat;
+    }
+
+  }
+
+}
+
 @media screen and (min-width:850px) {
   .u-sp-b {
     display: none;
