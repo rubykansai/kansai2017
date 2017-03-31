@@ -51,7 +51,7 @@
     left: 0;
     right: 0;
     margin: auto;
-    background: url("/images/img-dot.png")no-repeat center;
+    background: url("../images/img-dot.png")no-repeat center;
     background-size: contain;
   }
 
@@ -88,7 +88,7 @@
     content: "";
     display: block;
     position: absolute;
-    top: 17px;
+    top: 27px;
     left: -15%;
     z-index: -1;
     width: 130%;

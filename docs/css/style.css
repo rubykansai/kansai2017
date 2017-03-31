@@ -198,7 +198,7 @@ img {
       bottom: 0;
       right: 10px;
       margin: auto;
-      background: url("/images/btn-circle_arrow.png") no-repeat center;
+      background: url("../images/btn-circle_arrow.png") no-repeat center;
       background-size: contain; }
 
 .btn {
@@ -244,7 +244,7 @@ img {
     left: 0;
     right: 0;
     margin: auto;
-    background: url("/images/img-dot.png") no-repeat center;
+    background: url("../images/img-dot.png") no-repeat center;
     background-size: contain; }
 
 .ja_ttl {
@@ -273,7 +273,7 @@ img {
     content: "";
     display: block;
     position: absolute;
-    top: 17px;
+    top: 27px;
     left: -15%;
     z-index: -1;
     width: 130%;
@@ -312,7 +312,7 @@ img {
         bottom: 0;
         right: 10px;
         margin: auto;
-        background: url("/images/btn-circle_arrow.png") no-repeat center;
+        background: url("../images/btn-circle_arrow.png") no-repeat center;
         background-size: contain; }
   .under_bar {
     position: relative;
@@ -871,14 +871,27 @@ footer {
         letter-spacing: 0.1em; }
       .guest .guest_box .guest_box-company {
         display: block; }
-  .sponsor .sponsor_box {
-    width: 47%;
-    float: left; }
-    .sponsor .sponsor_box figcaption {
-      margin-top: 15px;
-      line-height: 1.8; }
-    .sponsor .sponsor_box + .sponsor_box {
-      margin-top: 40px; }
+  .sponsor {
+    padding: 70px 0; }
+    .sponsor .sponsor_block {
+      padding: 0 0 60px; }
+    .sponsor .sponsor_box {
+      width: 45%;
+      float: left;
+      margin-left: 3%;
+      max-width: inherit; }
+      .sponsor .sponsor_box figcaption {
+        margin-top: 15px;
+        line-height: 1.8; }
+      .sponsor .sponsor_box + .sponsor_box {
+        margin-top: 0; }
+      .sponsor .sponsor_box.floatnone {
+        float: none;
+        margin: 0 auto; }
+    .sponsor .pcwidth_h {
+      width: 200px; }
+    .sponsor .pcwidth_w {
+      width: 300px; }
   .ippan {
     margin-top: 60px; }
     .ippan .txt {
