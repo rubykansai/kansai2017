@@ -582,6 +582,7 @@ footer {
   margin: 0 auto; }
 
 .timetable {
+  width: 100%;
   margin-top: 80px;
   text-align: center; }
   .timetable th,
