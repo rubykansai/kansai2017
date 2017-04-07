@@ -16,6 +16,10 @@
 
 }
 
+.content_box {
+  padding: 60px 0;
+}
+
 .centering {
   width: 850px;
   margin: 0 auto;
@@ -125,6 +129,76 @@
 
     .guest_box-company {
       display: block;
+    }
+
+  }
+
+}
+
+.timetable {
+  margin-top: 80px;
+  text-align: left;
+
+  .schedule {
+    width: 80%;
+    max-width: 620px;
+    margin: 0 auto;
+
+    th,
+    td {
+      width: auto;
+      display: table-cell;
+      border: none;
+      border-top: 1px solid #f6eeee;
+    }
+
+    td:last-child {
+      border-bottom: 1px solid #f6eeee;
+    }
+
+    .rest {
+      padding: 10px 20px;
+    }
+
+    .detail {
+      padding: 30px 20px;
+
+      .ttl {
+        font-weight: bold;
+        font-size: 18rem;
+
+        &-underbar {
+          position: relative;
+          padding-bottom: 16px;
+
+          &:before {
+            content: "";
+            display: block;
+            bottom: 8px;
+            width: 30px;
+            height: 1px;
+            left: 1px;
+            right: inherit;
+            margin: inherit;
+          }
+
+        }
+
+      }
+
+    }
+
+    .time {
+      width: 150px;
+    }
+
+    .speaker {
+      padding-left: 25px;
+
+      &:before {
+        left: 0;
+      }
+
     }
 
   }
