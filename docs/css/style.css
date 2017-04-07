@@ -220,6 +220,7 @@ img {
     margin: auto; }
 
 .en_ttl {
+  text-align: center;
   font-size: 30rem;
   font-weight: bold;
   font-family: Avenir Next;
@@ -248,6 +249,7 @@ img {
     background-size: contain; }
 
 .ja_ttl {
+  text-align: center;
   font-size: 30rem;
   font-weight: bold;
   letter-spacing: 0.1em;
