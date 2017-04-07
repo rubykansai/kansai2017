@@ -581,6 +581,63 @@ footer {
   max-width: 130px;
   margin: 0 auto; }
 
+.timetable {
+  margin-top: 80px;
+  text-align: center; }
+  .timetable th,
+  .timetable td {
+    padding: 5px;
+    width: 100%;
+    display: block;
+    border: 1px solid #fbfbfb; }
+  .timetable .detail {
+    padding: 20px 5px; }
+    .timetable .detail .ttl {
+      font-weight: bold;
+      font-size: 18rem; }
+      .timetable .detail .ttl-underbar {
+        position: relative;
+        padding-bottom: 16px; }
+        .timetable .detail .ttl-underbar:before {
+          content: "";
+          display: block;
+          width: 30px;
+          height: 1px;
+          left: 0;
+          right: 0;
+          margin: auto;
+          background-color: #e14646;
+          position: absolute;
+          bottom: 6px; }
+    .timetable .detail .speaker {
+      position: relative;
+      display: inline-block;
+      padding-left: 5px; }
+      .timetable .detail .speaker:before {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 1px;
+        left: -20px;
+        width: 20px;
+        height: 25px;
+        background: url("../images/ico-speaker.png") no-repeat center;
+        background-size: contain; }
+  .timetable th {
+    text-align: center;
+    background-color: #fff; }
+    .timetable th.rest {
+      padding: 20px 5px; }
+    .timetable th.time {
+      background-color: #f9f9f9;
+      padding: 10px 5px;
+      font-weight: normal; }
+      .timetable th.time_inner {
+        position: relative; }
+        .timetable th.time_inner:before {
+          content: "";
+          display: block; }
+
 .sponsor {
   padding: 30px 3%;
   margin-top: 120px;
@@ -591,7 +648,7 @@ footer {
   .sponsor .sponsor_block {
     border-radius: 10px;
     position: relative;
-    padding: 0 0 50px;
+    padding: 0 0 70px;
     background-color: #fff; }
     .sponsor .sponsor_block + .sponsor_block {
       margin-top: 60px; }
@@ -610,6 +667,7 @@ footer {
   margin-top: 120px;
   background-color: #eee; }
   .staff.content_box {
+    padding-top: 0px;
     padding-bottom: 60px; }
   .staff .staff_list {
     text-align: center;
@@ -826,6 +884,8 @@ footer {
       width: 230px; }
     .fv .logo .ttl {
       font-size: 19rem; }
+  .content_box {
+    padding: 60px 0; }
   .centering {
     width: 850px;
     margin: 0 auto;
@@ -885,6 +945,46 @@ footer {
         letter-spacing: 0.1em; }
       .guest .guest_box .guest_box-company {
         display: block; }
+  .timetable {
+    margin-top: 80px;
+    text-align: left; }
+    .timetable .schedule {
+      width: 80%;
+      max-width: 620px;
+      margin: 0 auto; }
+      .timetable .schedule th,
+      .timetable .schedule td {
+        width: auto;
+        display: table-cell;
+        border: none;
+        border-top: 1px solid #f6eeee; }
+      .timetable .schedule td:last-child {
+        border-bottom: 1px solid #f6eeee; }
+      .timetable .schedule .rest {
+        padding: 10px 20px; }
+      .timetable .schedule .detail {
+        padding: 30px 20px; }
+        .timetable .schedule .detail .ttl {
+          font-weight: bold;
+          font-size: 18rem; }
+          .timetable .schedule .detail .ttl-underbar {
+            position: relative;
+            padding-bottom: 16px; }
+            .timetable .schedule .detail .ttl-underbar:before {
+              content: "";
+              display: block;
+              bottom: 8px;
+              width: 30px;
+              height: 1px;
+              left: 1px;
+              right: inherit;
+              margin: inherit; }
+      .timetable .schedule .time {
+        width: 150px; }
+      .timetable .schedule .speaker {
+        padding-left: 25px; }
+        .timetable .schedule .speaker:before {
+          left: 0; }
   .sponsor {
     padding: 70px 0; }
     .sponsor .sponsor_block {
