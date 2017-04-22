@@ -313,7 +313,7 @@ img {
       color: #fff;
       background-color: #B51717;
       display: inline-block;
-      padding: 10px 38px 10px 20px;
+      padding: 10px 38px 10px 30px;
       position: relative;
       width: auto; }
       .btn .basic:before {
@@ -470,7 +470,6 @@ header.bgc {
   margin-top: 55px; }
 
 footer {
-  margin-top: 120px;
   padding: 5px 0;
   text-align: center;
   background: #282828; }
@@ -728,6 +727,10 @@ footer {
     margin: auto;
     width: 40%;
     min-width: 180px; }
+
+#map {
+  height: 400px;
+  width: 100%; }
 
 @media screen and (min-width: 850px) {
   .bgc {
