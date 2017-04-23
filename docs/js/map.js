@@ -1,6 +1,6 @@
   function initMap() {
     var position = {lat: 34.683880, lng: 135.509206};
-    var iconBase = '../images/';
+    var iconBase = 'https://rubykansai.github.io/kansai2017/images/';
     var pin = iconBase + 'ico_pin.png';
 
     map = new google.maps.Map(document.getElementById('js-map'), {
