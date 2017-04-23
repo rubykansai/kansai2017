@@ -736,6 +736,11 @@ footer {
     margin-top: 20px;
     height: 400px;
     width: 100%; }
+  .access .address_ttl {
+    font-size: 16rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px; }
 
 @media screen and (min-width: 850px) {
   .bgc {

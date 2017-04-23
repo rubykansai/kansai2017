@@ -242,7 +242,7 @@
     });
 
   var contentString = '<div id="content">'+
-  '<p><strong>大阪産業創造館 4F イベントホール</strong><br>大阪府大阪市中央区本町1丁目4-5</p>'+
+  '<p><strong class="address_ttl">関西Ruby会議2017</strong>大阪府大阪市中央区本町1丁目4-5<br>大阪産業創造館 4F イベントホール</p>'+
   '</div>';
 
   var infowindow = new google.maps.InfoWindow({
