@@ -386,7 +386,17 @@
 
 }
 
-#map {
-  height: 400px;
-  width: 100%;
+.access {
+  padding: 0;
+
+  &.content_box {
+    padding: 0;
+  }
+
+  .map {
+    margin-top: 20px;
+    height: 400px;
+    width: 100%;
+  }
+
 }

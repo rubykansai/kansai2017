@@ -728,9 +728,14 @@ footer {
     width: 40%;
     min-width: 180px; }
 
-#map {
-  height: 400px;
-  width: 100%; }
+.access {
+  padding: 0; }
+  .access.content_box {
+    padding: 0; }
+  .access .map {
+    margin-top: 20px;
+    height: 400px;
+    width: 100%; }
 
 @media screen and (min-width: 850px) {
   .bgc {
@@ -1046,4 +1051,8 @@ footer {
     margin-top: 30px;
     padding: 40px 0 40px; }
   .staff .staff_ttl {
-    width: 30%; } }
+    width: 30%; }
+  .access .map {
+    margin-top: 20px;
+    height: 450px;
+    width: 100%; } }
