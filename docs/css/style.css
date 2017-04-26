@@ -507,6 +507,9 @@ footer {
     color: #fff;
     min-width: 275px;
     text-align: center; }
+  .fv a {
+    color: #fff;
+    text-decoration: underline; }
 
 .news-bar {
   background-color: #B40000;
