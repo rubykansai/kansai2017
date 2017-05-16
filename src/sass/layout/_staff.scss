@@ -1,0 +1,92 @@
+.staff {
+  .ttl--center {
+    margin-bottom: 100px;
+  }
+
+  &.contentbox {
+    padding-top: 0px;
+    padding-bottom: 60px;
+  }
+
+  .stafflist {
+    text-align: center;
+    position: relative;
+    z-index: 10;
+
+    li {
+      width: 17%;
+      display: inline-block;
+      margin-left: 2%;
+      margin-top: 14px;
+      vertical-align: top;
+
+      span {
+        display: block;
+      }
+
+      img {
+        vertical-align: top;
+      }
+
+      .detail {
+        margin-top: 10px;
+        display: block;
+        font-size: 10rem;
+        text-decoration: none;
+
+        .job {
+          font-size: 9rem;
+          line-height: 1;
+          color: #8A8A8A;
+        }
+
+        .name {
+          word-break: break-all;
+          line-height: 1.4;
+          color: #3DA69C;
+        }
+
+      }
+
+    }
+
+  }
+
+  .staffblock {
+    margin-top: 50px;
+    padding: 40px 0 30px;
+    position: relative;
+    border-top: 1px solid #929292;
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 3px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      border-top: 1px solid #929292;
+    }
+
+  }
+
+  .staffttl {
+    text-align: center;
+    position: absolute;
+    top: -17px;
+    z-index: 5;
+    display: block;
+    font-weight: bold;
+    font-size: 18rem;
+    padding: 5px 15px;
+    background: #fff;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 40%;
+    min-width: 180px;
+  }
+
+}
