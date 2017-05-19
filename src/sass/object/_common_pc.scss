@@ -1,65 +1,10 @@
-.under_bar {
-  position: relative;
-  margin-bottom: 80px;
+.contbox {
+  padding: 70px 0;
 
-  &:before {
-    content: "";
-    display: block;
-    width: 70px;
-    height: 3px;
-    background: #D71717;
-    position: absolute;
-    bottom: -15px;
-    left: 0;
-    right: 0;
-    margin: auto;
+  & + .contbox {
+    margin-top: 80px;
   }
 
-}
-
-.en_ttl {
-  font-size: 30rem;
-  font-weight: bold;
-  font-family: Avenir Next;
-  margin-bottom: 30px;
-
-  &--italic {
-    top: -37px;
-    position: relative;
-    font-size: 40rem;
-  }
-
-}
-
-.dot {
-  position: relative;
-
-  &:before {
-    content: "";
-    display: block;
-    width: 8px;
-    height: 6px;
-    position: absolute;
-    top: -10px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    background: url("/images/img-dot.png")no-repeat center;
-    background-size: contain;
-  }
-
-}
-
-.ja_ttl {
-  font-size: 34rem;
-  font-weight: bold;
-  letter-spacing: 0.15em;
-}
-
-.clearfix:after {
-  content: " ";
-  display: block;
-  clear: both;
 }
 
 @media screen and (min-width:850px) {
