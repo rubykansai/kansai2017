@@ -91,6 +91,10 @@
       padding: 0 1%;
     }
 
+    figcaption {
+      font-size: 14rem;
+    }
+
   }
 
 }
@@ -279,6 +283,11 @@
     margin-top: 20px;
     height: 400px;
     width: 100%;
+  }
+
+  .maplink {
+    margin-top: 5px;
+    text-align: right;
   }
 
 }

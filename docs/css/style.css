@@ -521,6 +521,8 @@ footer {
       width: 33.33%;
       float: left;
       padding: 0 1%; }
+    .about .imgbox figcaption {
+      font-size: 14rem; }
 
 .guest {
   background-image: linear-gradient(to bottom, #ed6ea0 0%, #ec8c69 100%); }
@@ -629,6 +631,10 @@ footer {
   margin-top: 20px;
   height: 400px;
   width: 100%; }
+
+.access .maplink {
+  margin-top: 5px;
+  text-align: right; }
 
 .subarea a {
   padding: 20px;
