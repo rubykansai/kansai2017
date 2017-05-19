@@ -26,4 +26,15 @@
 
   }
 
+  .whborder {
+    padding: 8px 36px 8px 18px;
+    background-color: transparent;
+
+    &:hover {
+      opacity: 1;
+      background-color: rgba(255, 255, 255, 0.4);
+    }
+
+  }
+
 }

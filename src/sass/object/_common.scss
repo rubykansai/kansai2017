@@ -45,14 +45,6 @@
   padding: 0 3%;
 }
 
-.ta-c {
-  text-align: center;
-}
-
-.fcwh {
-  color: #fff;
-}
-
 .ttl {
   font-size: 32rem;
   font-weight: bold;
@@ -154,6 +146,18 @@
 
   }
 
+}
+
+.floatnone {
+  float: none !important;
+}
+
+.ta-c {
+  text-align: center !important;
+}
+
+.fcwh {
+  color: #fff;
 }
 
 @media screen and (min-width:850px) {

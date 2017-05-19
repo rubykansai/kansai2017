@@ -2,13 +2,15 @@
   padding: 0 3%;
 }
 
-.content_box {
-  margin: 40px 0;
-  text-align: center;
-  padding: 0 3%;
-}
-
 .fv {
+  height: 100vh;
+  background: url("../images/bg-top--pc.jpg") no-repeat center / cover;
+  position: relative;
+
+  p + p {
+    margin-top: 0;
+  }
+
   &:before {
     content: "";
     position: absolute;
@@ -20,14 +22,11 @@
     background-color: #B12C2C;
   }
 
-  height: 100vh;
-  background: url("../images/bg-top--pc.jpg") no-repeat center / cover;
-  position: relative;
-
   &-inner {
     position: absolute;
-    width: 260px;
-    top: 45%;
+    width: 40%;
+    min-width: 260px;
+    top: 43%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -56,6 +55,28 @@
     text-decoration: underline;
   }
 
+  .shortcut-pc {
+    display: none;
+  }
+
+  .shortcut-sp {
+    display: block;
+    margin-top: 30px;
+
+    .btn {
+      & + .btn {
+        margin-top: 15px;
+      }
+
+      .basic {
+        text-decoration: none;
+        width: 100%;
+      }
+
+    }
+
+  }
+
 }
 
 .about {
@@ -63,11 +84,11 @@
 
   .imgbox {
     margin-top: 40px;
-    display: table;
 
     img {
-      display: table-cell;
-      width: 32.6%;
+      width: 33.33%;
+      float: left;
+      padding: 0 1%;
     }
 
   }
@@ -75,7 +96,7 @@
 }
 
 .guest {
-  background-color: #FFAC1F;
+  background-image: linear-gradient(to bottom, #ed6ea0 0%, #ec8c69 100%);
 
   .guestblock {
     border: 1px solid #F8F8F8;
@@ -131,7 +152,7 @@
 
       ul {
         display: table;
-        width: 25%;
+        width: 20%;
         min-width: 100px;
       }
 
@@ -148,6 +169,44 @@
 
 .attend {
   background: url("../images/bg-attend--sp.jpg") no-repeat top center / cover;
+
+  .btn + .btn {
+    margin-top: 10px;
+  }
+
+}
+
+.workshop {
+  text-align: center;
+
+  &.contbox {
+    padding: 0 0 50px;
+  }
+
+  .name {
+    font-weight: bold;
+    font-size: 20rem;
+  }
+
+  .txt {
+    font-size: 14rem;
+  }
+
+  .workshopbox {
+    & + .workshopbox {
+      margin-top: 40px;
+    }
+
+  }
+
+  .place {
+    margin-top: 5px;
+  }
+
+  .time {
+    margin-top: 0;
+  }
+
 }
 
 .party {
@@ -155,11 +214,19 @@
     margin-top: 10px;
   }
 
+  .txtbox {
+    text-align: center;
+  }
+
+  .imgbox {
+    width: 80%;
+    margin: 15px auto 0;
+  }
+
 }
 
 .sponsor {
-  background: url("../images/bg-sponsor.jpg");
-  background-size: cover;
+  background-image: linear-gradient(to top, #e14fad 0%, #f9d423 100%);
 
   .centering {
     padding: 30px 3%;
@@ -204,6 +271,10 @@
 }
 
 .access {
+  .continner {
+    padding: 0;
+  }
+
   .map {
     margin-top: 20px;
     height: 400px;
@@ -213,6 +284,13 @@
 }
 
 .subarea {
+  a {
+    padding: 20px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+  }
+
   &.contbox {
     margin-top: 0px;
     padding: 20px 0 60px;
@@ -225,7 +303,6 @@
   }
 
   .subbox {
-    padding: 20px;
     width: 85%;
     margin: 0 auto;
     background-position: center;
