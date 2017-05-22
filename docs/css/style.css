@@ -571,21 +571,64 @@ footer {
   .attend .btn + .btn {
     margin-top: 10px; }
 
-.workshop {
+.timetable {
   text-align: center; }
-  .workshop.contbox {
-    padding: 0 0 50px; }
-  .workshop .name {
-    font-weight: bold;
-    font-size: 20rem; }
-  .workshop .txt {
-    font-size: 14rem; }
-  .workshop .workshopbox + .workshopbox {
-    margin-top: 40px; }
-  .workshop .place {
-    margin-top: 5px; }
-  .workshop .time {
-    margin-top: 0; }
+  .timetable th,
+  .timetable td {
+    padding: 5px;
+    width: 100%;
+    display: block;
+    border: 1px solid #fbfbfb; }
+  .timetable .detail {
+    padding: 20px 5px; }
+    .timetable .detail .timettl, .timetable .detail .timettl--underbar {
+      font-weight: bold;
+      font-size: 18rem; }
+      .timetable .detail .timettl--underbar {
+        position: relative;
+        padding-bottom: 16px; }
+        .timetable .detail .timettl--underbar:before {
+          content: "";
+          display: block;
+          width: 30px;
+          height: 1px;
+          left: 0;
+          right: 0;
+          margin: auto;
+          background-color: #e14646;
+          position: absolute;
+          bottom: 6px; }
+    .timetable .detail .speaker {
+      position: relative;
+      display: inline-block;
+      padding-left: 5px;
+      margin-top: 4px; }
+      .timetable .detail .speaker:before {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 1px;
+        left: -20px;
+        width: 20px;
+        height: 25px;
+        background: url("../images/ico-speaker.png") no-repeat center;
+        background-size: contain; }
+  .timetable th {
+    text-align: center;
+    background-color: #fff; }
+    .timetable th.rest {
+      padding: 20px 5px; }
+    .timetable th.time {
+      background-color: #f9f9f9;
+      padding: 10px 5px;
+      font-weight: normal; }
+      .timetable th.time_inner {
+        position: relative; }
+        .timetable th.time_inner:before {
+          content: "";
+          display: block; }
+  .timetable .workshop {
+    margin-top: 100px; }
 
 .party.contbox {
   margin-top: 10px; }
@@ -736,65 +779,21 @@ footer {
   width: 40%;
   min-width: 180px; }
 
-.timetable {
-  width: 100%;
+.workshop {
   text-align: center; }
-  .timetable th,
-  .timetable td {
-    padding: 5px;
-    width: 100%;
-    display: block;
-    border: 1px solid #fbfbfb; }
-  .timetable .detail {
-    padding: 20px 5px; }
-    .timetable .detail .timettl, .timetable .detail .timettl--underbar {
-      font-weight: bold;
-      font-size: 18rem; }
-      .timetable .detail .timettl--underbar {
-        position: relative;
-        padding-bottom: 16px; }
-        .timetable .detail .timettl--underbar:before {
-          content: "";
-          display: block;
-          width: 30px;
-          height: 1px;
-          left: 0;
-          right: 0;
-          margin: auto;
-          background-color: #e14646;
-          position: absolute;
-          bottom: 6px; }
-    .timetable .detail .speaker {
-      position: relative;
-      display: inline-block;
-      padding-left: 5px;
-      margin-top: 4px; }
-      .timetable .detail .speaker:before {
-        content: "";
-        position: absolute;
-        display: block;
-        top: 1px;
-        left: -20px;
-        width: 20px;
-        height: 25px;
-        background: url("../images/ico-speaker.png") no-repeat center;
-        background-size: contain; }
-  .timetable th {
-    text-align: center;
-    background-color: #fff; }
-    .timetable th.rest {
-      padding: 20px 5px; }
-    .timetable th.time {
-      background-color: #f9f9f9;
-      padding: 10px 5px;
-      font-weight: normal; }
-      .timetable th.time_inner {
-        position: relative; }
-        .timetable th.time_inner:before {
-          content: "";
-          display: block; }
-  .timetable .workshop {
-    margin-top: 100px; }
+  .workshop.contbox {
+    padding: 0 0 50px; }
+  .workshop .name {
+    font-weight: bold;
+    font-size: 20rem; }
+  .workshop .txt {
+    font-size: 14rem; }
+  .workshop .workshopbox + .workshopbox {
+    margin-top: 40px; }
+  .workshop .place {
+    margin-top: 5px; }
+  .workshop .time {
+    margin-top: 0; }
 
 @media screen and (min-width: 850px) {
   .bgc {
@@ -1056,19 +1055,10 @@ footer {
         min-width: 220px; }
       .attend .btn + .btn {
         margin-top: 0; }
-  .workshop .detail {
-    margin-top: 90px; }
-  .workshop .name {
-    font-weight: bold;
-    font-size: 20rem; }
-  .workshop .txt {
-    font-size: 14rem; }
-  .workshop .workshopbox {
-    float: left;
-    width: 48%; }
-    .workshop .workshopbox + .workshopbox {
-      margin-top: 0;
-      margin-left: 2%; }
+  .timetable table {
+    width: 50%;
+    max-width: 700px;
+    margin: 0 auto; }
   .party .txtbox {
     text-align: left; }
   .party .imgbox {
@@ -1135,6 +1125,16 @@ footer {
     background-image: url("../images/bg-staff.jpg"); }
   .staff .continner {
     width: 580px; }
-  .timetable table {
-    width: 80%;
-    margin: 0 auto; } }
+  .workshop .detail {
+    margin-top: 90px; }
+  .workshop .name {
+    font-weight: bold;
+    font-size: 20rem; }
+  .workshop .txt {
+    font-size: 14rem; }
+  .workshop .workshopbox {
+    float: left;
+    width: 48%; }
+    .workshop .workshopbox + .workshopbox {
+      margin-top: 0;
+      margin-left: 2%; } }

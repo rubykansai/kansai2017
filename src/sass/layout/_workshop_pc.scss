@@ -1,0 +1,26 @@
+.workshop {
+  .detail {
+    margin-top: 90px;
+  }
+
+  .name {
+    font-weight: bold;
+    font-size: 20rem;
+  }
+
+  .txt {
+    font-size: 14rem;
+  }
+
+  .workshopbox {
+    float: left;
+    width: 48%;
+
+    & + .workshopbox {
+      margin-top: 0;
+      margin-left: 2%;
+    }
+
+  }
+
+}
