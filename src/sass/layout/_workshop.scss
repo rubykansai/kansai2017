@@ -1,0 +1,32 @@
+.workshop {
+  text-align: center;
+
+  &.contbox {
+    padding: 0 0 50px;
+  }
+
+  .name {
+    font-weight: bold;
+    font-size: 20rem;
+  }
+
+  .txt {
+    font-size: 14rem;
+  }
+
+  .workshopbox {
+    & + .workshopbox {
+      margin-top: 40px;
+    }
+
+  }
+
+  .place {
+    margin-top: 5px;
+  }
+
+  .time {
+    margin-top: 0;
+  }
+
+}

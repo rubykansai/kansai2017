@@ -21,12 +21,12 @@
 @import "./layout/_footer";
 @import "./layout/_top";
 @import "./layout/_staff";
-@import "./layout/_timetable";
+@import "./layout/_workshop";
 
 @media screen and (min-width:850px) {
   @import "./layout/_header_pc";
   @import "./layout/_footer_pc";
   @import "./layout/_top_pc";
   @import "./layout/_staff_pc";
-  @import "./layout/_timetable_pc";
+  @import "./layout/_workshop_pc";
 }
