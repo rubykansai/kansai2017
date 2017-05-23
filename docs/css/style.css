@@ -1100,6 +1100,9 @@ footer {
       width: 60%;
       margin: 0 auto;
       display: block; }
+    .sponsor .sponsorbox .rubynokai {
+      padding: 50px 0 35px;
+      width: 75%; }
     .sponsor .sponsorbox figcaption {
       margin-top: 15px;
       line-height: 1.8;
