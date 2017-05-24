@@ -189,10 +189,17 @@
 }
 
 .timetable {
-  table {
-    width: 50%;
-    max-width: 700px;
+  .schedule {
+    max-width: 500px;
     margin: 0 auto;
+  }
+
+  .session .speakerdetail .sns {
+    display: block;
+    text-align: right;
+    position: absolute;
+    right: 0;
+    bottom: -5px;
   }
 
 }
