@@ -184,7 +184,7 @@
   text-align: center;
 
   .schedule {
-    margin-left: 10px;
+    margin-left: 6%;
     position: relative;
 
     &:before {
@@ -233,6 +233,7 @@
     .other {
       margin: 10px 0;
       padding: 10px;
+      font-size: 14rem;
       background-color: #ededed;
     }
 
@@ -263,12 +264,9 @@
         letter-spacing: 0.05em;
       }
 
-      figure {
-        padding-top: 15px;
-        display: table;
-        width: 100%;
+      .speakerdetail {
         margin-top: 15px;
-        text-align: left;
+        vertical-align: top;
         position: relative;
 
         &:before {
@@ -281,33 +279,38 @@
           left: 0;
         }
 
-      }
+        .speakerimg {
+          vertical-align: middle;
+          max-width: 50px;
+        }
 
-      .speakerimg,
-      .speaker {
-        display: table-cell;
-      }
-
-      .speakerimg {
-        vertical-align: top;
-      }
-
-      .sns {
-        li {
-          width: 25px;
+        .speakername {
           display: inline-block;
+          margin-left: 5px;
+        }
 
-          &:last-child {
-            margin-left: 15px;
+        .sns {
+          display: block;
+          text-align: right;
+
+          li {
+            display: inline-block;
+
+            &:last-child {
+              &:before {
+                content: "\00ff0f";
+              }
+
+            }
+
+            a {
+              color: #fff;
+            }
+
           }
 
         }
 
-      }
-
-      .speaker {
-        width: 85%;
-        padding-left: 10px;
       }
 
     }
