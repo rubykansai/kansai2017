@@ -633,6 +633,11 @@ footer {
         font-size: 18rem;
         line-height: 1.2;
         letter-spacing: 0.05em; }
+      .timetable .schedule .session .slide {
+        display: block;
+        text-align: right; }
+        .timetable .schedule .session .slide a {
+          color: #fff; }
       .timetable .schedule .session .speakerdetail {
         margin-top: 15px;
         vertical-align: top;
