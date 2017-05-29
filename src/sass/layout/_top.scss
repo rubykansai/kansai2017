@@ -264,6 +264,14 @@
         letter-spacing: 0.05em;
       }
 
+      .slide {
+        display: block;
+        text-align: right;
+        a {
+          color: #fff;
+        }
+      }
+
       .speakerdetail {
         margin-top: 15px;
         vertical-align: top;
